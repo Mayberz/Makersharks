@@ -1,5 +1,3 @@
-http://localhost:8082/swagger-ui/index.html
-
 
 # *MakersharkService*
   *Version: 3.3.2*
