@@ -21,7 +21,7 @@
 
   **1. Adding Username and password to the database:**
 
-  Use  *http://localhost:8080/api/supplier/register* endpoint, Method type=POST and select Body as JSON type to add user in database.
+  Use  *http://localhost:8080/api/supplier/register* endpoint, Method type as 'POST' and select Body as JSON type to add user in database.
   
   *Example:*
   ```
@@ -34,7 +34,7 @@
 ```
   **2. Authentication:**
 
-Use  *http://localhost:8080/api/supplier/authenticate* endpoint with Method type=POST to obtain the JWT Token as response.
+Use  *http://localhost:8080/api/supplier/authenticate* endpoint with Method type as 'POST' to obtain the JWT Token as response.
 
 *Example:*
 
@@ -46,7 +46,7 @@ Use  *http://localhost:8080/api/supplier/authenticate* endpoint with Method type
 ```
 **3. Adding  Supplier:**
 
-Use  *http://localhost:8080/api/supplier/add* endpoint with Method Type=POST to add add Supplier in to the Database and in Authurization Section choose Authentication type as *Bearer Token* 
+Use  *http://localhost:8080/api/supplier/add* endpoint with Method Type as 'POST' to add add Supplier in to the Database and in Authurization Section choose Authentication type as *Bearer Token* 
 
 *Example JSON Body:*   
  
@@ -64,7 +64,7 @@ Use  *http://localhost:8080/api/supplier/add* endpoint with Method Type=POST to 
 ```
 **4. Fetch Manufacturers:**
 
-Use  *http://localhost:8080/api/supplier/query* endpoint with Method Type=POST and in Authurization Section choose Authentication type as *Bearer Token*
+Use  *http://localhost:8080/api/supplier/query* endpoint with Method Type as 'POST' and in Authurization Section choose Authentication type as *Bearer Token*
 
 *Example JSON Body:*   
 
