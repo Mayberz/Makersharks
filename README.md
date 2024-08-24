@@ -90,6 +90,65 @@ http://localhost:8080/swagger-ui/index.html
 
 **3.** Test rest of the Endpoints 
 
+# *Testing the API Using curl*
+
+You can use the following curl commands to test the API endpoints:
+
+**1. Add a User:**
+To register a new user, use the /api/supplier/register endpoint with a POST request:
+```
+curl -X POST http://localhost:8080/api/supplier/register \
+-H "Content-Type: application/json" \
+-d '{
+      "name": "James",
+      "username": "Sawyer",
+      "password": "Frekles",
+      "role": "ADMIN"
+    }'
+
+
+```
+
+**2. Authenticate and Obtain JWT Token:**
+To authenticate a user and obtain a JWT token, use the /api/supplier/authenticate endpoint with a POST request:
+```
+curl -X POST http://localhost:8080/api/supplier/authenticate \
+-H "Content-Type: application/json" \
+-d '{
+      "username": "Sawyer",
+      "password": "Frekles"
+    }'
+```
+**3. Add a Supplier:**
+To add a new supplier, use the /api/supplier/add endpoint with a POST request. Ensure you include the JWT token in the Authorization header:
+```
+curl -X POST http://localhost:8080/api/supplier/add \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <your-jwt-token>" \
+-d '{
+      "company_name": "TATA Industries",
+      "website": "http://Tata.com",
+      "location": "India",
+      "natureOfBusiness": "small_scale",
+      "manufacturingProcesses": [
+        "three_dimensional_printing",
+        "casting"
+      ]
+    }'
+```
+**4. Fetch Manufacturers:**
+To search for manufacturers, use the /api/supplier/query endpoint with a POST request. Again, ensure you include the JWT token in the Authorization header:
+```
+curl -X POST http://localhost:8080/api/supplier/query \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer <your-jwt-token>" \
+-d '{
+      "location": "India",
+      "natureOfBusiness": "small_scale",
+      "manufacturingProcesses": "three_dimensional_printing"
+    }'
+
+```
 # *Unit Testing*
 
 Unit tests have been written using JUnit and Mockito to ensure the correctness of the application's functionality,if you are using a IDE then Right-click on the test class or method and select "Run" to execute the tests.
