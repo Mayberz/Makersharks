@@ -17,7 +17,7 @@
 
 **Note:** Customize the database properties (spring.datasource.*) according to their specific requirements before deploying the application.
 
-# *Testing Application Using PostMan*
+# *Testing Application Using Postman*
 
   **1. Adding Username and password to the database:**
 
