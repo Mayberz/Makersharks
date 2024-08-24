@@ -14,7 +14,6 @@
 * Mockito
 * Lombhok
 * Swagger for API documentation
-* Postman for testing
 
 **Note:** Customize the database properties (spring.datasource.*) according to their specific requirements before deploying the application.
 
