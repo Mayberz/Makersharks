@@ -84,7 +84,7 @@ Once the application is running, you can access the Swagger UI at
 http://localhost:8080/swagger-ui/index.html
 ```
 
-**1.** Select */api/supplier/authenticate* & pass the username & password, it will generate the JWT Token as Response.
+**1.** Select **/api/supplier/authenticate** & pass the username & password, it will generate the JWT Token as Response.
 
 **2.** Copy the generated JWT Token & Paste it to the Authorize Section
 
